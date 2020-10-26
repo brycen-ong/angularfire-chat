@@ -1,0 +1,19 @@
+.nav-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .nav-elements{
+    cursor: pointer;
+    width: 150px;
+    display: flex;
+    justify-content: space-between
+  }
+  .nav-title{
+    font-weight: 500;
+  }
+}
+.mat-toolbar{
+  background-color: #243447;
+  color: #FFFFFF;
+}

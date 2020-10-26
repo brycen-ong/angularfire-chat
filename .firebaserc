@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-chat-54e71": {
+      "hosting": {
+        "angularfire-chat": [
+          "fir-chat-54e71"
+        ]
+      }
+    }
+  }
+}

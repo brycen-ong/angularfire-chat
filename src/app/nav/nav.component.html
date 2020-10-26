@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <div *ngIf="user then loggedIn else loggedOut"></div>
+  <ng-template #loggedIn>
+    <div class="nav-container">
+      <div class="nav-title" routerLink="/">{{user.displayName}}</div>
+      <div class="nav-elements">
+        <span routerLInk="/home">Home</span>
+        <span (click)="logout()">Logout</span>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #loggedOut>
+    <div class="nav-container">
+      <div class="nav-title" routerLink="/">BryChat</div>
+      <div class="nav-elements">
+        <span routerLink="/landing">Home</span>
+        <span routerLink="/signin">Login</span>
+      </div>
+    </div>
+  </ng-template>
+
+</mat-toolbar>

@@ -1,0 +1,42 @@
+.landing-container{
+  color: white;
+  .landing-card{
+    width: 375px;
+    border-radius: 5px;
+    background-color: rgba(50,50,50,0.5);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .landing-signup{
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .landing-button{
+      margin-top: 50px;
+      width: 30%;
+      height: 125px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      button{
+        font-size: 20px;
+        height: 50px;
+        width: 225px;
+      }
+      .landing-login{
+        background-color: #243447;
+        color: white;
+      }
+      .landing-register{
+        background-color: #505050;
+        color: white;
+      }
+    }
+  }
+}
