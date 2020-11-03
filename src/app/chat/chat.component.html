@@ -2,19 +2,21 @@
   <ng-container *ngIf="chat$ | async as chat">
     <ng-container *ngIf=" _authService.user$ | async as user">
 
-      <div class="chat">
-        <div class="msg animated zoomInUp" *ngFor="let msg of chat.messages; trackBy: trackByCreated">
-          <div class="user">
-            <div><span class="tag is-dark">{{ msg.user?.displayName || msg.user?.uid }}</span></div>
+      <div class="chat-card">
+        <div class="chat">
+          <div class="" *ngFor="let msg of chat.messages; trackBy: trackByCreated">
+            <div class="msg-user">{{ msg.user?.displayName || msg.user?.uid }}</div>
+            <div class ="msg-card">
+              <div class="msg-content">{{ msg.content }}</div>
+            </div>
           </div>
-          <p>{{ msg.content }}</p>
         </div>
-      </div>
 
-      <div class="form">
-        <input class="input" [(ngModel)]="newMsg" maxlength="100" (keydown.enter)="submit(chat.id)">
+        <div class="chat-box">
+          <input class="input" [(ngModel)]="newMsg" maxlength="100" (keydown.enter)="submit(chat.id)">
 
-        <button (click)="submit(chat.id)" class="button is-info" [disabled]="!newMsg">Send</button>
+          <button mat-raised-button (click)="submit(chat.id)">Send</button>
+        </div>
       </div>
 
     </ng-container>

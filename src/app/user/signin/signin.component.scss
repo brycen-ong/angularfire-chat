@@ -6,18 +6,29 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  .signin-form{
-    background-color: rgba(50,50,50,0.5);
-    width: 25vw;
-    color: white;
+  .signin-form-card{
     display: flex;
     flex-direction: column;
-    button{
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #202020;
+    border-radius: 10px;
+    .signin-form{
+      width: 300px;
       color: white;
-      background-color: #243447;
+      display: flex;
+      flex-direction: column;
+      button{
+        font-size: 20px;
+        color: white;
+        background-color: #243447;
+      }
     }
   }
+
 }

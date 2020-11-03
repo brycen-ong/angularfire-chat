@@ -7,22 +7,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .signup-form{
-    color: white;
-    width: 25vw;
+  .signup-card{
     display: flex;
     flex-direction: column;
-    .halfWidth{
-      width: 49%;
-    }
-    .signup-name{
-      display: flex;
-      align-items: space-between;
-      justify-content: space-between;
-    }
-    button{
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #202020;
+    border-radius: 10px;
+    .signup-form{
       color: white;
-      background-color: #243447;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      .halfWidth{
+        width: 49%;
+      }
+      .signup-name{
+        display: flex;
+        align-items: space-between;
+        justify-content: space-between;
+      }
+      button{
+        font-size: 20px;
+        color: white;
+        background-color: #243447;
+      }
     }
   }
+
 }
